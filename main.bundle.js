@@ -38,7 +38,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"card panel-primary-v3\">\n  <div class=\"card-header small-padding\">\n    <h3>RegEx Tester</h3>\n  </div>\n  <div class=\"card-body\">\n    <div class=\"row\">\n      <div class=\"col-md-9\">\n        <div class=\"form-group\">\n          <h6>Pattern</h6>\n          <textarea class=\"form-control\" rows=\"3\"></textarea>\n        </div>\n        <div class=\"form-group\">\n          <h6>Text</h6>\n          <textarea class=\"form-control\" rows=\"7\"></textarea>\n        </div>\n      </div>\n      <div class=\"col-md-3 options\">\n        <h6>Options</h6>\n        <div class=\"form-check\">\n          <label class=\"form-check-label\">\n            <input type=\"checkbox\" class=\"form-check-input\"> Ignore Case\n          </label>\n        </div>\n        <div class=\"form-check\">\n          <label class=\"form-check-label\">\n            <input type=\"checkbox\" class=\"form-check-input\"> Multiline\n          </label>\n        </div>\n        <div class=\"form-check\">\n          <label class=\"form-check-label\">\n            <input type=\"checkbox\" class=\"form-check-input\"> Explicit Capture\n          </label>\n        </div>\n        <div class=\"form-check\">\n          <label class=\"form-check-label\">\n            <input type=\"checkbox\" class=\"form-check-input\"> Singleline\n          </label>\n        </div>\n        <div class=\"form-check\">\n          <label class=\"form-check-label\">\n            <input type=\"checkbox\" class=\"form-check-input\"> Ignore Pattern Whitespace\n          </label>\n        </div>\n        <div class=\"form-check\">\n          <label class=\"form-check-label\">\n            <input type=\"checkbox\" class=\"form-check-input\"> Right To Left\n          </label>\n        </div>\n        <div class=\"form-check\">\n          <label class=\"form-check-label\">\n            <input type=\"checkbox\" class=\"form-check-input\"> ECMA Script\n          </label>\n        </div>\n        <div class=\"form-check\">\n          <label class=\"form-check-label\">\n            <input type=\"checkbox\" class=\"form-check-input\"> Culture Invariant\n          </label>\n        </div>\n        <div class=\"form-check\">\n          <label class=\"form-check-label\">\n            <input type=\"checkbox\" class=\"form-check-input\"> Show Captures\n          </label>\n        </div>\n      </div>\n    </div>\n    <div class=\"row\">\n      <div class=\"col\">\n        <div class=\"card nav-card\">\n          <div class=\"card-header\">\n            <ul class=\"nav nav-tabs card-header-tabs\" role=\"tablist\">\n              <li class=\"nav-item\">\n                <a class=\"nav-link active\" data-toggle=\"tab\" href=\"#tabMatches\" role=\"tab\" aria-controls=\"home\"\n                   aria-expanded=\"true\"><h6>Matches</h6></a>\n              </li>\n              <li class=\"nav-item\">\n                <a class=\"nav-link\" data-toggle=\"tab\" href=\"#tabReplace\" role=\"tab\" aria-controls=\"replace\"\n                   aria-expanded=\"true\"><h6>Replace</h6></a>\n              </li>\n            </ul>\n          </div>\n          <div class=\"card-body\">\n            <div class=\"tab-content\">\n              <div class=\"tab-pane fade show active\" id=\"tabMatches\" role=\"tabpanel\">\n                Matches\n              </div>\n              <div class=\"tab-pane fade\" id=\"tabReplace\" role=\"tabpanel\">\n                Replace\n              </div>\n            </div>\n          </div>\n          <div class=\"card-footer small-size blur\">\n            <a href=\"https://leevox.com\" target=\"_blank\">LeeVox</a><span> &copy; 2017</span>\n            <a target=\"_blank\" href=\"https://github.com/RegExTester/regex-tester\" title=\"Source Code\"><img width=\"32px\" height=\"32px\" src=\"assets/img/github.png\"/></a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
+module.exports = "<div class=\"card panel-primary-v3\">\n  <div class=\"card-header small-padding\">\n    <a class=\"text-white\" href=\"/\"><h3>RegEx Tester</h3></a>\n  </div>\n  <div class=\"card-body\">\n    <div class=\"row\">\n      <div class=\"col-md-9\">\n        <div class=\"form-group\">\n          <h6>Pattern</h6>\n          <textarea #inputPattern [(ngModel)]=\"pattern\"\n            rows=\"3\" autocorrect=\"off\" autocapitalize=\"none\" spellcheck=\"false\"\n            class=\"form-control input-text pattern\">\n          </textarea>\n        </div>\n        <div class=\"form-group\">\n          <h6>Text</h6>\n          <div mwlTextInputHighlightContainer>\n            <textarea #inputText mwlTextInputElement [(ngModel)]=\"text\"\n              rows=\"5\" autocorrect=\"off\" autocapitalize=\"none\" spellcheck=\"false\"\n              class=\"form-control input-text text\">\n            </textarea>\n            <mwl-text-input-highlight\n              [tags]=\"highlight\"\n              [textInputElement]=\"inputText\">\n            </mwl-text-input-highlight>\n          </div>\n        </div>\n      </div>\n      <div class=\"col-md-3 options\">\n        <h6>Options</h6>\n        <div class=\"form-check\">\n          <label class=\"form-check-label\">\n            <input type=\"checkbox\" class=\"form-check-input\"> Ignore Case\n          </label>\n        </div>\n        <div class=\"form-check\">\n          <label class=\"form-check-label\">\n            <input type=\"checkbox\" class=\"form-check-input\"> Multiline\n          </label>\n        </div>\n        <div class=\"form-check\">\n          <label class=\"form-check-label\">\n            <input type=\"checkbox\" class=\"form-check-input\"> Explicit Capture\n          </label>\n        </div>\n        <div class=\"form-check\">\n          <label class=\"form-check-label\">\n            <input type=\"checkbox\" class=\"form-check-input\"> Singleline\n          </label>\n        </div>\n        <div class=\"form-check\">\n          <label class=\"form-check-label\">\n            <input type=\"checkbox\" class=\"form-check-input\"> Ignore Pattern Whitespace\n          </label>\n        </div>\n        <div class=\"form-check\">\n          <label class=\"form-check-label\">\n            <input type=\"checkbox\" class=\"form-check-input\"> Right To Left\n          </label>\n        </div>\n        <div class=\"form-check\">\n          <label class=\"form-check-label\">\n            <input type=\"checkbox\" class=\"form-check-input\"> ECMA Script\n          </label>\n        </div>\n        <div class=\"form-check\">\n          <label class=\"form-check-label\">\n            <input type=\"checkbox\" class=\"form-check-input\"> Culture Invariant\n          </label>\n        </div>\n        <div class=\"form-check\">\n          <label class=\"form-check-label\">\n            <input type=\"checkbox\" class=\"form-check-input\"> Show Captures\n          </label>\n        </div>\n      </div>\n    </div>\n    <div class=\"row\">\n      <div class=\"col\">\n        <div class=\"card nav-card\">\n          <div class=\"card-header\">\n            <ul class=\"nav nav-tabs card-header-tabs\" role=\"tablist\">\n              <li class=\"nav-item\">\n                <a class=\"nav-link active\" data-toggle=\"tab\" href=\"#tabMatches\" role=\"tab\" aria-controls=\"home\"\n                   aria-expanded=\"true\"><h6>Matches</h6></a>\n              </li>\n              <li class=\"nav-item\">\n                <a class=\"nav-link\" data-toggle=\"tab\" href=\"#tabReplace\" role=\"tab\" aria-controls=\"replace\"\n                   aria-expanded=\"true\"><h6>Replace</h6></a>\n              </li>\n            </ul>\n          </div>\n          <div class=\"card-body\">\n            <div class=\"tab-content\">\n              <div class=\"tab-pane fade show active\" id=\"tabMatches\" role=\"tabpanel\">\n                Matches\n              </div>\n              <div class=\"tab-pane fade\" id=\"tabReplace\" role=\"tabpanel\">\n                Replace\n              </div>\n            </div>\n          </div>\n          <div class=\"card-footer small-size blur\">\n            <a href=\"https://leevox.com\" target=\"_blank\">LeeVox</a><span> &copy; 2017</span>\n            <a target=\"_blank\" href=\"https://github.com/RegExTester/regex-tester\" title=\"Source Code\">\n              <img width=\"32px\" height=\"32px\" src=\"assets/img/github.png\"/></a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -57,12 +57,28 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 var AppComponent = (function () {
     function AppComponent() {
-        this.title = 'app';
+        this.pattern = '';
+        this.text = 'This is a\n    multiline textarea with highlight.';
+        this.options = 0;
+        this.highlight = [
+            { indices: { start: 2, end: 4 }, cssClass: 'match-1' },
+            { indices: { start: 5, end: 7 }, cssClass: 'match-2' },
+            { indices: { start: 8, end: 14 }, cssClass: 'match-3' },
+            { indices: { start: 24, end: 32 }, cssClass: 'match-4' },
+            { indices: { start: 38, end: 42 }, cssClass: 'match-5' }
+        ];
     }
+    AppComponent.prototype.onInputText = function (innerHTML) {
+        this.text = innerHTML
+            .replace(/<\s*\/?\s*div\s*>/ig, '\n')
+            .replace(/<\s*br\s*\/?\s*>/ig, '\n')
+            .replace(/\b\s+\b/ig, '\n')
+            .replace(/\n{2,}/ig, '\n');
+    };
     return AppComponent;
 }());
 AppComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
         selector: 'app-root',
         template: __webpack_require__("../../../../../src/app/app.component.html"),
         styles: [__webpack_require__("../../../../../src/app/app.component.css")]
@@ -81,9 +97,9 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__("../../../platform-browser/@angular/platform-browser.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_animations__ = __webpack_require__("../../../platform-browser/@angular/platform-browser/animations.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_primeng_primeng__ = __webpack_require__("../../../../primeng/primeng.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_primeng_primeng___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_primeng_primeng__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_angular_text_input_highlight__ = __webpack_require__("../../../../angular-text-input-highlight/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -95,23 +111,25 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var AppModule = (function () {
     function AppModule() {
     }
     return AppModule;
 }());
 AppModule = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["NgModule"])({
+    Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["L" /* NgModule */])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */]
+            __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */]
         ],
         imports: [
-            __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["BrowserModule"],
+            __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
             __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
-            __WEBPACK_IMPORTED_MODULE_3_primeng_primeng__["PanelModule"]
+            __WEBPACK_IMPORTED_MODULE_3__angular_forms__["a" /* FormsModule */],
+            __WEBPACK_IMPORTED_MODULE_4_angular_text_input_highlight__["a" /* TextInputHighlightModule */]
         ],
         providers: [],
-        bootstrap: [__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */]]
+        bootstrap: [__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */]]
     })
 ], AppModule);
 
@@ -150,7 +168,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 if (__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].production) {
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["enableProdMode"])();
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_20" /* enableProdMode */])();
 }
 Object(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_2__app_app_module__["a" /* AppModule */])
     .catch(function (err) { return console.log(err); });

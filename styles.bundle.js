@@ -27,6 +27,33 @@ if(false) {
 
 /***/ }),
 
+/***/ "../../../../angular-text-input-highlight/text-input-highlight.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__("../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../angular-text-input-highlight/text-input-highlight.css");
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__("../../../../style-loader/addStyles.js")(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../css-loader/index.js??ref--8-1!../postcss-loader/index.js??postcss!./text-input-highlight.css", function() {
+			var newContent = require("!!../css-loader/index.js??ref--8-1!../postcss-loader/index.js??postcss!./text-input-highlight.css");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
 /***/ "../../../../bootstrap/dist/css/bootstrap.min.css":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -62,7 +89,22 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "a:hover {\n  text-decoration: none !important;\n}\n.blur span, .blur a:not(hover), .blur img:not(hover) {\n  opacity: 0.3;\n}\n.blur a:hover, .blur img:hover {\n  opacity: 2;\n}\n\n.bg-lightgrey {\n  background-color: #e5e5e5\n}\n\ndiv.container.margin-top {\n  margin-top: 2rem;\n}\n\ndiv.card.panel-primary-v3 > div.card-header {\n  color: #fff;\n  background-color: #337ab7;\n  border-color: #337ab7;\n}\n\ndiv.card-header.small-padding {\n  padding: 0.5rem 1.25rem;\n}\n\nlabel.form-check-label {\n  cursor: pointer;\n}\n\ndiv.card.nav-card {\n  border: none;\n}\n\ndiv.card.nav-card > .card-header {\n  background-color: transparent;\n  padding-left: 0.6rem;\n}\n\ndiv.card.nav-card > .card-header a {\n  color: rgb(33, 37, 41);\n}\n\ndiv.card.nav-card > .card-body {\n  border: 1px solid rgba(0, 0, 0, .125);\n  border-top: none;\n}\n\ndiv.card-footer.small-size {\n  background-color: transparent;\n  border: none;\n  font-size: smaller;\n  text-align: right;\n  padding-right: 0rem;\n  margin-bottom: -1.25rem;\n}\n", ""]);
+exports.push([module.i, "a:hover {\n  text-decoration: none !important;\n}\n.blur span, .blur a:not(hover), .blur img:not(hover) {\n  opacity: 0.3;\n}\n.blur a:hover, .blur img:hover {\n  opacity: 2;\n}\n\n.bg-lightgrey {\n  background-color: #e5e5e5\n}\n\ndiv.container.margin-top {\n  margin-top: 2rem;\n}\n\ndiv.card.panel-primary-v3 > div.card-header {\n  color: #fff;\n  background-color: #337ab7;\n  border-color: #337ab7;\n}\n\ndiv.card-header.small-padding {\n  padding: 0.5rem 1.25rem;\n}\n\nlabel.form-check-label {\n  cursor: pointer;\n}\n\ndiv.card.nav-card {\n  border: none;\n}\n\ndiv.card.nav-card > .card-header {\n  background-color: transparent;\n}\n\ndiv.card.nav-card > .card-header a {\n  color: rgb(33, 37, 41);\n}\n\ndiv.card.nav-card > .card-body {\n  border: 1px solid rgba(0, 0, 0, .125);\n  border-top: none;\n}\n\ndiv.card-footer.small-size {\n  background-color: transparent;\n  border: none;\n  font-size: smaller;\n  text-align: right;\n  padding-right: 0rem;\n  margin-bottom: -1.25rem;\n}\n\n/* textarea input */\ntextarea.input-text {\n  resize: none;\n  background-color: #f7f7f7;\n  overflow-x: hidden;\n  overflow-y: scroll;\n  font-size: 20px;\n  text-space: 1px;\n  font-family: Consolas, \"Courier New\", monospace;\n}\ntextarea.input-text.pattern:focus {\n  background-color: #f7f7f7;\n}\ndiv.text-highlight-element {\n  background-color: #f7f7f7 !important;\n}\n.text-input-highlight-container .text-highlight-tag {\n  border-radius: 0px !important;\n  padding: 0px !important;\n  margin: 0px !important;\n}\n\n.match-1 {\n  background-color: lightblue;\n}\n.match-2 {\n  background-color: lightcoral;\n}\n.match-3 {\n  background-color: lightgreen;\n}\n.match-4 {\n  background-color: lightsalmon;\n}\n.match-5 {\n  background-color: lightsteelblue;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../angular-text-input-highlight/text-input-highlight.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".text-input-highlight-container {\n  position: relative; }\n  .text-input-highlight-container .text-input-element {\n    background: none;\n    position: relative;\n    z-index: 2; }\n  .text-input-highlight-container .text-highlight-element {\n    overflow: hidden !important;\n    white-space: pre-wrap;\n    position: absolute;\n    top: 0;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    background: white;\n    color: transparent;\n    z-index: 1; }\n  .text-input-highlight-container .text-highlight-tag {\n    border-radius: 8px;\n    padding: 1px 3px;\n    margin: -1px -3px; }\n", ""]);
 
 // exports
 
@@ -509,7 +551,8 @@ function updateLink(linkElement, obj) {
 
 __webpack_require__("../../../../../src/styles.css");
 __webpack_require__("../../../../bootstrap/dist/css/bootstrap.min.css");
-module.exports = __webpack_require__("../../../../font-awesome/css/font-awesome.min.css");
+__webpack_require__("../../../../font-awesome/css/font-awesome.min.css");
+module.exports = __webpack_require__("../../../../angular-text-input-highlight/text-input-highlight.css");
 
 
 /***/ })
