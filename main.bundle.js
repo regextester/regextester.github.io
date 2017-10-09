@@ -194,7 +194,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/regex/regex.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"card panel-primary-v3\">\n  <div class=\"card-header small-padding\">\n    <a class=\"text-white\" href=\"/\"><h3>RegEx Tester</h3></a>\n  </div>\n  <div class=\"card-body\">\n    <div class=\"row\">\n      <div class=\"col-md-9\">\n        <div class=\"form-group\">\n          <h6>Pattern</h6>\n          <textarea #inputPattern [(ngModel)]=\"pattern\" (ngModelChange)=\"onModelChanged()\"\n            rows=\"3\" autocorrect=\"off\" autocapitalize=\"none\" spellcheck=\"false\"\n            class=\"form-control input-text pattern\">\n          </textarea>\n        </div>\n        <div class=\"form-group\">\n          <h6>Text</h6>\n          <div mwlTextInputHighlightContainer>\n            <textarea #inputText mwlTextInputElement [(ngModel)]=\"text\" (ngModelChange)=\"onModelChanged()\"\n              rows=\"5\" autocorrect=\"off\" autocapitalize=\"none\" spellcheck=\"false\"\n              class=\"form-control input-text text\">\n            </textarea>\n            <mwl-text-input-highlight\n              [tags]=\"highlight\"\n              [textInputElement]=\"inputText\">\n            </mwl-text-input-highlight>\n          </div>\n        </div>\n      </div>\n      <div class=\"col-md-3 options\">\n        <h6>Options</h6>\n          <div class=\"form-check\" *ngFor=\"let option of options\">\n            <label class=\"form-check-label\">\n              <input type=\"checkbox\" class=\"form-check-input\" value=\"{{option.value}}\"\n              [(ngModel)]=\"option.checked\" (ngModelChange)=\"onModelChanged()\"> {{ option.name }}\n            </label>\n          </div>\n      </div>\n    </div>\n    <div class=\"row\">\n      <div class=\"col\">\n        <div class=\"card nav-card\">\n          <div class=\"card-header\">\n            <ul class=\"nav nav-tabs card-header-tabs\" role=\"tablist\">\n              <li class=\"nav-item\">\n                <a class=\"nav-link active\" data-toggle=\"tab\" href=\"#tabMatches\" role=\"tab\" aria-controls=\"home\"\n                   aria-expanded=\"true\"><h6>Matches</h6></a>\n              </li>\n              <li class=\"nav-item\">\n                <a class=\"nav-link\" data-toggle=\"tab\" href=\"#tabReplace\" role=\"tab\" aria-controls=\"replace\"\n                   aria-expanded=\"true\"><h6>Replace</h6></a>\n              </li>\n            </ul>\n          </div>\n          <div class=\"card-body\">\n            <div class=\"tab-content\">\n              <div class=\"tab-pane fade show active\" id=\"tabMatches\" role=\"tabpanel\">\n                Matches\n              </div>\n              <div class=\"tab-pane fade\" id=\"tabReplace\" role=\"tabpanel\">\n                Replace\n              </div>\n            </div>\n          </div>\n          <div class=\"card-footer small-size blur\">\n            <a href=\"https://leevox.com\" target=\"_blank\">LeeVox</a><span> &copy; 2017</span>\n            <a target=\"_blank\" href=\"https://github.com/RegExTester/regex-tester\" title=\"Source Code\">\n              <img width=\"32px\" height=\"32px\" src=\"assets/img/github.png\"/></a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
+module.exports = "<div class=\"card panel-primary-v3\">\r\n  <div class=\"card-header small-padding\">\r\n    <a class=\"text-white\" href=\"/\"><h3>RegEx Tester</h3></a>\r\n  </div>\r\n  <div class=\"card-body\">\r\n    <div class=\"row\">\r\n      <div class=\"col-md-9\">\r\n        <div class=\"form-group\">\r\n          <h6>Pattern</h6>\r\n          <textarea #inputPattern [(ngModel)]=\"pattern\" (ngModelChange)=\"onModelChanged()\"\r\n            rows=\"3\" autocorrect=\"off\" autocapitalize=\"none\" spellcheck=\"false\"\r\n            class=\"form-control input-text pattern\">\r\n          </textarea>\r\n        </div>\r\n        <div class=\"form-group\">\r\n          <h6>Text</h6>\r\n          <div mwlTextInputHighlightContainer>\r\n            <textarea #inputText mwlTextInputElement [(ngModel)]=\"text\" (ngModelChange)=\"onModelChanged()\"\r\n              rows=\"5\" autocorrect=\"off\" autocapitalize=\"none\" spellcheck=\"false\"\r\n              class=\"form-control input-text text\">\r\n            </textarea>\r\n            <mwl-text-input-highlight\r\n              [tags]=\"highlight\"\r\n              [textInputElement]=\"inputText\">\r\n            </mwl-text-input-highlight>\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"col-md-3 options\">\r\n        <h6>Options</h6>\r\n          <div class=\"form-check\" *ngFor=\"let option of options\">\r\n            <label class=\"form-check-label\">\r\n              <input type=\"checkbox\" class=\"form-check-input\" value=\"{{option.value}}\"\r\n              [(ngModel)]=\"option.checked\" (ngModelChange)=\"onModelChanged()\"> {{ option.name }}\r\n            </label>\r\n          </div>\r\n      </div>\r\n    </div>\r\n    <div class=\"row\">\r\n      <div class=\"col\">\r\n        <div class=\"card nav-card\">\r\n          <div class=\"card-header\">\r\n            <ul class=\"nav nav-tabs card-header-tabs\" role=\"tablist\">\r\n              <li class=\"nav-item\">\r\n                <a class=\"nav-link active\" data-toggle=\"tab\" href=\"#tabMatches\" role=\"tab\" aria-controls=\"home\"\r\n                   aria-expanded=\"true\"><h6>Matches</h6></a>\r\n              </li>\r\n              <li class=\"nav-item\">\r\n                <a class=\"nav-link\" data-toggle=\"tab\" href=\"#tabReplace\" role=\"tab\" aria-controls=\"replace\"\r\n                   aria-expanded=\"true\"><h6>Replace</h6></a>\r\n              </li>\r\n            </ul>\r\n          </div>\r\n          <div class=\"card-body\">\r\n            <div class=\"tab-content\">\r\n              <div class=\"tab-pane fade show active\" id=\"tabMatches\" role=\"tabpanel\">\r\n                Matches\r\n              </div>\r\n              <div class=\"tab-pane fade\" id=\"tabReplace\" role=\"tabpanel\">\r\n                Replace\r\n              </div>\r\n            </div>\r\n          </div>\r\n          <div class=\"card-footer small-size blur\">\r\n            <a href=\"https://leevox.com\" target=\"_blank\">LeeVox</a><span> &copy; 2017</span>\r\n            <a target=\"_blank\" href=\"https://github.com/RegExTester/regex-tester\" title=\"Source Code\">\r\n              <img width=\"32px\" height=\"32px\" src=\"assets/img/github.png\"/></a>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -204,9 +204,9 @@ module.exports = "<div class=\"card panel-primary-v3\">\n  <div class=\"card-hea
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RegexComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__("../../../common/@angular/common.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common_http__ = __webpack_require__("../../../common/@angular/common/http.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common_http__ = __webpack_require__("../../../common/@angular/common/http.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_encodeUriBeauty__ = __webpack_require__("../../../../../src/utils/encodeUriBeauty.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__regex_config__ = __webpack_require__("../../../../../src/app/regex/regex.config.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -223,11 +223,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 var RegexComponent = (function () {
-    function RegexComponent(http, route, router, location) {
+    function RegexComponent(http, route, router, encoder) {
         this.http = http;
         this.route = route;
         this.router = router;
-        this.location = location;
+        this.encoder = encoder;
         this.busy = false;
         this.engine = '';
         this.pattern = '';
@@ -242,9 +242,9 @@ var RegexComponent = (function () {
         var _this = this;
         this.sub = this.route.params.subscribe(function (params) {
             var optionsValue = +params['options'];
-            _this.pattern = decodeURIComponent(params['pattern'] || '');
-            _this.text = decodeURIComponent(params['text'] || '');
-            _this.engine = decodeURIComponent(params['engine'] || '');
+            _this.pattern = _this.encoder.decodeBase64(params['pattern'] || '');
+            _this.text = _this.encoder.decodeBase64(params['text'] || '');
+            _this.engine = _this.encoder.decodeBase64(params['engine'] || '');
             _this.options.forEach(function (opt) {
                 opt.checked = (optionsValue & opt.value) === opt.value;
             });
@@ -270,14 +270,14 @@ var RegexComponent = (function () {
         this.busy = true;
         var optionsValue = 0;
         this.options.forEach(function (i) { return optionsValue += i.checked ? i.value : 0; });
-        var pattern = encodeURIComponent(this.pattern || ''), text = encodeURIComponent(this.text || ''), options = optionsValue.toString(), engine = encodeURIComponent(this.engine || '');
+        var pattern = this.encoder.encodeBase64(this.pattern || ''), text = this.encoder.encodeBase64(this.text || ''), engine = this.encoder.encodeBase64(this.engine || ''), options = optionsValue.toString();
         if (pattern && text) {
             this.router.navigate([pattern, text, options || '', engine || '']);
-            var url = (__WEBPACK_IMPORTED_MODULE_4__regex_config__["a" /* CONFIG */].API.DOTNET.HOST + __WEBPACK_IMPORTED_MODULE_4__regex_config__["a" /* CONFIG */].API.DOTNET.GET)
-                .replace('{pattern}', pattern)
-                .replace('{text}', text)
-                .replace('{options}', options);
-            this.http.get(url).subscribe(function (data) {
+            this.http.post(__WEBPACK_IMPORTED_MODULE_4__regex_config__["a" /* CONFIG */].API.DOTNET.POST, {
+                pattern: this.pattern,
+                text: this.text,
+                options: optionsValue
+            }).subscribe(function (data) {
                 _this.matches = JSON.stringify(data);
                 _this.highlight = [];
                 var matchIndex = 0;
@@ -296,9 +296,10 @@ RegexComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
         selector: 'app-regex',
         template: __webpack_require__("../../../../../src/app/regex/regex.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/regex/regex.component.css")]
+        styles: [__webpack_require__("../../../../../src/app/regex/regex.component.css")],
+        providers: [__WEBPACK_IMPORTED_MODULE_3__utils_encodeUriBeauty__["a" /* EncodeUriHelper */]]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__angular_common_http__["a" /* HttpClient */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_common_http__["a" /* HttpClient */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* ActivatedRoute */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1__angular_common__["f" /* Location */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_common__["f" /* Location */]) === "function" && _d || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__angular_common_http__["a" /* HttpClient */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_common_http__["a" /* HttpClient */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__utils_encodeUriBeauty__["a" /* EncodeUriHelper */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__utils_encodeUriBeauty__["a" /* EncodeUriHelper */]) === "function" && _d || Object])
 ], RegexComponent);
 
 var _a, _b, _c, _d;
@@ -311,6 +312,8 @@ var _a, _b, _c, _d;
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CONFIG; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__environments_environment__ = __webpack_require__("../../../../../src/environments/environment.ts");
+
 var CONFIG = {
     DELAY_TIME: 800,
     MATCH_COLORS_COUNT: 5,
@@ -328,9 +331,8 @@ var CONFIG = {
     },
     API: {
         DOTNET: {
-            HOST: 'https://regex-tester-api-dotnet.now.sh',
-            GET: '/api/regex?p={pattern}&t={text}&o={options}',
-            POST: '/api/regex'
+            GET: __WEBPACK_IMPORTED_MODULE_0__environments_environment__["a" /* environment */].apiServer.dotnet + '/api/regex?p={pattern}&t={text}&o={options}',
+            POST: __WEBPACK_IMPORTED_MODULE_0__environments_environment__["a" /* environment */].apiServer.dotnet + '/api/regex'
         }
     }
 };
@@ -392,7 +394,10 @@ RegexRoutingModule = __decorate([
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 // The file contents for the current environment will overwrite these during build.
 var environment = {
-    production: false
+    production: false,
+    apiServer: {
+        dotnet: 'http://localhost:5000'
+    }
 };
 //# sourceMappingURL=environment.js.map
 
@@ -417,6 +422,30 @@ if (__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment *
 Object(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_2__app_app_module__["a" /* AppModule */])
     .catch(function (err) { return console.log(err); });
 //# sourceMappingURL=main.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/utils/encodeUriBeauty.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EncodeUriHelper; });
+var EncodeUriHelper = (function () {
+    function EncodeUriHelper() {
+    }
+    EncodeUriHelper.prototype.encodeBase64 = function (str) {
+        return btoa(encodeURIComponent(str)
+            .replace(/%([0-9A-F]{2})/g, function (match, p1) { return String.fromCharCode(parseInt('0x' + p1, 16)); })).replace(/\+/ig, '-').replace(/=/ig, '_');
+    };
+    EncodeUriHelper.prototype.decodeBase64 = function (str) {
+        return decodeURIComponent(atob(str.replace(/-/ig, '+').replace(/_/ig, '=')).split('')
+            .map(function (c) { return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2); })
+            .join(''));
+    };
+    return EncodeUriHelper;
+}());
+
+//# sourceMappingURL=encodeUriBeauty.js.map
 
 /***/ }),
 
