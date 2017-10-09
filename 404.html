@@ -1,14 +1,25 @@
 <!doctype html>
-<html>
-  <head>
-    <!-- This stores the URL the user was attempting to go to in sessionStorage,
-    and then redirects all 404 responses to the app’s index.html page -->
-    <!-- See http://www.backalleycoder.com/2016/05/13/sghpa-the-single-page-app-hack-for-github-pages/ -->
-    <script>
-      sessionStorage.redirect = location.href;
-    </script>
-    <meta http-equiv="refresh" content="0;URL='https://regextester.github.io'"></meta>
-  </head>
-  <body>
-  </body>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Regular Expression Tester</title>
+    <base href="/">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Regular Expression Tester">
+    <meta name="keywords" content="regex tester, regex, regular expression">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+</head>
+
+<body class="bg-lightgrey">
+    <div class="container margin-top">
+        <app-root></app-root>
+    </div>
+
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90206021-2"></script>
+    <script async src="google-analytics.js"></script>
+</body>
+
 </html>
